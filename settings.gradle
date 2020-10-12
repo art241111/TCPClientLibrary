@@ -1,0 +1,3 @@
+rootProject.name = "TCPClientLibrary"
+include ':app'
+include ':tcp_client_library'
