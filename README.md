@@ -12,7 +12,12 @@ As well as you want to add a library of coroutines
 implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
 implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
 ```
-
+```
+    repositories {
+        google()
+        jcenter()
+    }
+```
 ## 1. Creating a client and connecting to the server.
 To connect to the server we need to create a client 
 ```
