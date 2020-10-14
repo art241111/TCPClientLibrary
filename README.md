@@ -31,7 +31,7 @@ client.connect(address, port)
 
 ## 2. Subscribe to receive incoming data.
 To subscribe to read incoming data, you need to create a class that will inherit from HandlerImp and then pass it to the addHandlers method.  
-Or you can setListener 
+Or you this construction:  
 ```
       client.addHandler(
             object : HandlerImp {
