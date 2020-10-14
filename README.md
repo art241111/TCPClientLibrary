@@ -1,23 +1,19 @@
 # TCPConnectionLibrary
 This library allows you to create a stable client for connecting to the server over the TCP Protocol.
 ## 0. Adding permissions and dependencies.
-For the library to work properly, you need to add permissions:  
+Add this library in `build.gragle` module level 
 ```
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+implementation 'com.github.art241111.try:try:0.0.1'
 ```
-As well as you want to add a library of coroutines  
-```
-implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
-implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
-```
+
+In `build.gradle` project level check google and jcenter repositories:
 ```
     repositories {
         google()
         jcenter()
     }
 ```
+
 ## 1. Creating a client and connecting to the server.
 To connect to the server we need to create a client 
 ```
