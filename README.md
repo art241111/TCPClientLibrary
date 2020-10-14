@@ -30,8 +30,16 @@ client.connect(address, port)
 ```
 
 ## 2. Subscribe to receive incoming data.
-To subscribe to read incoming data, you need to create a class that will inherit from HandlerImp and then pass it to the addHandlers method.
-
+To subscribe to read incoming data, you need to create a class that will inherit from HandlerImp and then pass it to the addHandlers method.  
+Or you can setListener 
+```
+      client.addHandler(
+            object : HandlerImp {
+                override fun handle(text: String) {
+                    Log.d("on_handle", text)
+                }
+        })
+```
 ## 3. Sending a message to the server.
 To send a message to the server, you need to call the write method and pass the message to it.   
 ```
